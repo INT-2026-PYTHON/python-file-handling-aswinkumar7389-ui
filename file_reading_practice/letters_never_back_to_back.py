@@ -53,3 +53,24 @@ Sorted -> ['b', 'd', 'e', 'h', 'k', 'm', 'n',
 =================================================
 
 """
+# Open the file and read all words
+with open("file_reading_practice/sowpods.txt", "r") as f:
+
+    words = [line.strip().lower() for line in f]
+
+seen = set()      # letters that appear anywhere
+doubled = set()   # letters that appear twice in a row
+
+# Go through each word
+for word in words:
+    for i in range(len(word)):
+        seen.add(word[i])  # mark letter as seen
+        # check if the same letter repeats
+        if i < len(word) - 1 and word[i] == word[i+1]:
+            doubled.add(word[i])
+
+# Final answer = letters seen but not doubled
+result = sorted(seen - doubled)
+
+print("Letters that never appear back-to-back:")
+print(result)
