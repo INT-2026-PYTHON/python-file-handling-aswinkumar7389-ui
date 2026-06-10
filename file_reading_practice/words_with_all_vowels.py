@@ -40,3 +40,22 @@ Explanation:
 =================================================
 
 """
+# Find words with all five vowels (a, e, i, o, u) without issubset
+
+# Open the file
+with open("C:/Users/aswin/OneDrive/Documents/GitHub/python-file-handling-aswinkumar7389-ui/file_reading_practice/sowpods.txt", "r") as f:
+    words = [line.strip().lower() for line in f]
+
+count = 0  # counter for words that qualify
+
+# Check each word manually
+for word in words:
+    if ("a" in word and
+        "e" in word and
+        "i" in word and
+        "o" in word and
+        "u" in word):
+        print(word)
+        count += 1
+
+print("Total words with all vowels:", count)

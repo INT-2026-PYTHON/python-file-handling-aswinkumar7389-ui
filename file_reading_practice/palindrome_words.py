@@ -51,3 +51,21 @@ Explanation:
 =================================================
 
 """
+# Helper function to check palindrome
+def is_palindrome(word):
+    # A word is palindrome if it equals its reverse
+    return word == word[::-1]
+
+# Open the file
+with open("C:/Users/aswin/OneDrive/Documents/GitHub/python-file-handling-aswinkumar7389-ui/file_reading_practice/sowpods.txt", "r") as f:
+    words = [line.strip().lower() for line in f]
+
+count = 0  # keep track of total palindromes
+
+# Check each word one at a time
+for word in words:
+    if is_palindrome(word):   # call the helper function
+        print(word)           # print the palindrome
+        count += 1            # increase counter
+
+print("Total palindromes:", count)
