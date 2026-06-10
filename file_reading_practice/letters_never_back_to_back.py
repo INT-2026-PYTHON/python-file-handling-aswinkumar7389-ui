@@ -54,7 +54,7 @@ Sorted -> ['b', 'd', 'e', 'h', 'k', 'm', 'n',
 
 """
 # Open the file and read all words
-with open("C:/Users/aswin/OneDrive/Documents/GitHub/python-file-handling-aswinkumar7389-ui/file_reading_practice/sowpods.txt", "r") as f:
+with open("file_reading_practice/sowpods.txt", "r") as f:
 
     words = [line.strip().lower() for line in f]
 

@@ -57,7 +57,7 @@ def is_palindrome(word):
     return word == word[::-1]
 
 # Open the file
-with open("C:/Users/aswin/OneDrive/Documents/GitHub/python-file-handling-aswinkumar7389-ui/file_reading_practice/sowpods.txt", "r") as f:
+with open("file_reading_practice/sowpods.txt", "r") as f:
     words = [line.strip().lower() for line in f]
 
 count = 0  # keep track of total palindromes

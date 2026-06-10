@@ -43,7 +43,7 @@ Explanation:
 # Find words with all five vowels (a, e, i, o, u) without issubset
 
 # Open the file
-with open("C:/Users/aswin/OneDrive/Documents/GitHub/python-file-handling-aswinkumar7389-ui/file_reading_practice/sowpods.txt", "r") as f:
+with open("file_reading_practice/sowpods.txt", "r") as f:
     words = [line.strip().lower() for line in f]
 
 count = 0  # counter for words that qualify

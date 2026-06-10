@@ -59,11 +59,11 @@ After sorting -> ['a', 'compare', 'i', 'to'].
 
 """
 # Read sowpods.txt into a set
-with open("C:/Users/aswin/OneDrive/Documents/GitHub/python-file-handling-aswinkumar7389-ui/file_reading_practice/sowpods.txt", "r") as f:
+with open("file_reading_practice/sowpods.txt", "r") as f:
     sowpods = set(line.strip().lower() for line in f)
 
 # Read sonnet_words.txt into a set
-with open("C:/Users/aswin/OneDrive/Documents/GitHub/python-file-handling-aswinkumar7389-ui/file_reading_practice/sonnet_words.txt", "r") as f:
+with open("file_reading_practice/sonnet_words.txt", "r") as f:
     sonnet = set(line.strip().lower() for line in f)
 
 # Find words in sonnet but not in sowpods
